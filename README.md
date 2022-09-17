@@ -39,19 +39,23 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Uses:
+Create React App[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Material/UI[Material-ui](https://mui.com/material-ui/getting-started/installation/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Styled-components[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Code Splitting
+Icons-material[Material-ui Icons](https://mui.com/material-ui/icons/#font-icons).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React-Reveal[React Reveal documentation](https://www.react-reveal.com/).
 
-### Analyzing the Bundle Size
+Roboto-Font[Font recomended for Material-ui](https://mui.com/material-ui/react-typography/#general).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Material-ui Grid[Material-ui Grid system documentation](https://mui.com/material-ui/react-grid/).
+
+React Blur[Component for creating blurred backgrounds](https://www.npmjs.com/package/react-blur).
+
 
 ### Making a Progressive Web App
 
