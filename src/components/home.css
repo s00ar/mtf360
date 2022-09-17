@@ -42,9 +42,15 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 6rem;
 }
+.up-arrow{
+  transform: rotate(180deg);
+}
 .space{
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+.space-bottom{
+  padding-bottom: 5rem;
 }
 .container__comic{
   padding-left: 5rem;

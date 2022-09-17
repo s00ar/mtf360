@@ -3,6 +3,9 @@ import "./home.css";
 import {Fade, LightSpeed, Slide} from "react-reveal";
 import { Grid } from '@mui/material';
 import styled from "styled-components";
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import Comic from "./Comic";
 import PageII from "./PageII";
 import Clients from "./Clients";
@@ -75,6 +78,23 @@ function Home() {
         <Comic/>
         <SocialNext/>
         <Clients/>
+        
+        {/* BACK TO TOP BUTTON */}
+
+                <Grid container className="space-bottom" spacing={1}>
+          <Grid item xs={5.5}>
+            <TwitterIcon/>
+            <LinkedInIcon/>
+            <InstagramIcon/>
+          </Grid>
+            <Fade delay={1000}>
+          <Grid item className="centered" xs={1}><a href="#home">
+            <img src={arrow} className="up-arrow" alt="down-arrow" /></a>
+          </Grid>
+            </Fade>
+          <Grid item xs={5.5}>
+          </Grid>
+        </Grid>
       </div>
     );
   }
