@@ -64,8 +64,8 @@ function Home() {
         <Grid container className="space" spacing={1}>
           <Grid item xs={5.5}>
           </Grid>
-            <Fade delay={1000}>
-          <Grid item className="centered" xs={1}><a href="#next1">
+            <Fade delay={700}>
+          <Grid item className="centered" xs={1}><a href="#footer">
             <img src={arrow} className="arrow" alt="down-arrow" /></a>
           </Grid>
             </Fade>
@@ -87,7 +87,7 @@ function Home() {
             <LinkedInIcon/>
             <InstagramIcon/>
           </Grid>
-            <Fade delay={1000}>
+            <Fade delay={700}>
           <Grid item className="centered" xs={1}><a href="#home">
             <img src={arrow} className="up-arrow" alt="down-arrow" /></a>
           </Grid>

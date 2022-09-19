@@ -22,7 +22,7 @@ function Clients() {
         `;
     return (
         <>
-            <Grid container id="next" spacing={1}>
+            <Grid container id="footer" spacing={1}>
                 <Grid item xs={6}>
                     <div className="home-elements">
                         <Slide left delay={750} duration={1500} distance="40px">
