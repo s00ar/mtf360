@@ -42,7 +42,7 @@ function Home() {
               <Slide left delay={750} duration={1500} distance="40px">
               <h1 className="text-white">We do!</h1>
               </Slide>
-              <p>We design and create a unique website for each cliente. A website must express the unique personality that each brand has, together with UX/UI concepts. Brands are becoming more creative when it comes to selling online, don't be left out.
+              <p className="p-text">We design and create a unique website for each cliente. A website must express the unique personality that each brand has, together with UX/UI concepts. Brands are becoming more creative when it comes to selling online, don't be left out.
               Count on us to develop the website you've always wanted.
               </p>
                 <Button className="contact-button">
@@ -54,7 +54,7 @@ function Home() {
           </Grid>
           <Grid item xs={8}>
           <LightSpeed right delay={250} duration={1000} distance="40px">
-            <img src={logo} className="logo" alt="logo" />
+            <img src={logo} className="logo" alt="logo"/>
             </LightSpeed>
           </Grid>
         </Grid>
@@ -81,7 +81,7 @@ function Home() {
         
         {/* BACK TO TOP BUTTON */}
 
-                <Grid container className="space-bottom" spacing={1}>
+        <Grid container className="space-bottom" spacing={1}>
           <Grid item xs={5.5}>
             <TwitterIcon/>
             <LinkedInIcon/>

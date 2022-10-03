@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import {Fade} from "react-reveal";
+import { Fade } from "react-reveal";
 import { Grid } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
