@@ -2,11 +2,24 @@ import "./navigation.css";
 import { Grid } from '@mui/material';
 import React from "react";
 import Fade from "react-reveal";
-import slogo from '../assets/logo_small.png';
+import slogo from '../../assets/logo_small.png';
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import Burger from './Burger';
 
 function Navigation() {
+      /* START MEDIA QUERIES */
+        const [matches, setMatches] = useState(
+        window.matchMedia("(min-width: 924px)").matches
+        )
+        
+    useEffect(() => {
+        window
+        .matchMedia("(min-width: 924px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+    }, []);
+    /* END MEDIA QUERIES */
     const Button = styled.button`
         display: inline-block;
         font-size: .8em;
@@ -19,7 +32,8 @@ function Navigation() {
         color: white;
         `;
     return (
-    <div>
+    <div>{/* Big Screen */}
+    {matches && (
         <Grid className="navbar" container spacing={1}>
             <Grid item xs={2}>
                 <Fade bottom >
@@ -64,7 +78,13 @@ function Navigation() {
                     </NavLink>
                     </Button>
                 </Grid>
-            </Grid>
+            </Grid>)}
+            {/* Small Screen*/}
+        {!matches && (
+            <div classname="burger">
+                <Burger/>
+            </div>
+        )}
         </div>
     );
 }

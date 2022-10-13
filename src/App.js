@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/navbar/Navigation";
 import Home from "./components/Home";
 import Services from "./components/Services";
 import Work from "./components/Work";
@@ -9,7 +9,7 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id= "app">
       <Navigation/>
         <Routes>
               <Route exact path="/" element={

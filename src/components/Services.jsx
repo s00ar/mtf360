@@ -1,4 +1,4 @@
-import "./services.css";
+import "./css/services.css";
 import React from "react";
 import { Slide } from "react-reveal";
 import { Grid } from '@mui/material';

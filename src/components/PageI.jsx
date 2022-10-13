@@ -1,11 +1,23 @@
-import logo from "../assets/logo.png";
-import "./home.css";
-import React from "react";
-import {Fade, LightSpeed, Slide} from "react-reveal";
-import { Grid, container, Button } from '@mui/material';
+import something from "../assets/something.png";
+import bar1 from "../assets/line3.png";
+import "./css/PageI.css";
+import React, { useEffect, useState } from "react";
+import { Slide} from "react-reveal";
+import { Grid } from '@mui/material';
 import styled from "styled-components";
 
 function PageI() {
+      /* START MEDIA QUERIES */
+    const [matches, setMatches] = useState(
+        window.matchMedia("(min-width: 924px)").matches
+    )
+    
+    useEffect(() => {
+    window
+    .matchMedia("(min-width: 924px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+    }, []);
+    /* END MEDIA QUERIES */
     const Button = styled.button`
         display: inline-block;
         font-size: 1em;
@@ -19,34 +31,47 @@ function PageI() {
         `;
     return (
         <>
-            <Grid container id="home" spacing={1}>
-                <Grid item xs={4}>
-                    <div className="home-elements">
-                        <Fade>
-                            <Slide left delay={1250} duration={1000} distance="400px">
-                                <h1 className="text-dargrey">We are,</h1>
-                            </Slide>
-                        </Fade>
-                        <Slide left delay={500} duration={1200} distance="40px">
-                            <h1 className="text-grey">We Think,</h1>
+            {matches && (
+                <>
+                    <Grid container id="next1">
+                        <Slide left delay={100} duration={1000} distance="1200px">
+                            <Grid item xs={12} md={3}>
+                                <img src={something} className="images" alt="m360-do-something-marketing" />
+                            </Grid>
                         </Slide>
-                        <Slide left delay={750} duration={1500} distance="40px">
-                            <h1 className="text-white">We do!</h1>
-                        </Slide>
-                        <p>We design and create a unique website for each cliente. A website must express the unique personality that each brand has, together with UX/UI concepts. Brands are becoming more creative when it comes to selling online, don't be left out. Count on us to develop the website you've always wanted.</p>
-                        <Button className="contact-button">
-                            <a className="smoothscroll" href="#contact">Get in touch</a>
-                        </Button>
+                        <Grid item className="text" xs={10} md={3}>
+                            You want to position yourself in the first places of organic searches "SEO", let's do it. Work with our team of SEO experts who rely on various software to find even the smallest error that you may have on your website in order to fix it. Once we have your website in order, we start with more advanced strategies for indexing, content creation and backlinks.
+                            <Button className="contact-button">
+                                <a className="smoothscroll" href="#services">
+                                Check our services
+                                </a>
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <div className="bar">
+                            <img src={bar1} className="line3" alt="m360-bar1" />
                     </div>
-                </Grid>
-                <Grid item xs={8}>
-                    <LightSpeed right delay={250} duration={1000} distance="40px">
-                        <img src={logo} className="logo" alt="logo" />
-                    </LightSpeed>
-                </Grid>
-            </Grid>
+                </>
+            )}
+            {!matches && (
+                <>
+                    <Slide left delay={100} duration={1000} distance="1200px">
+                        <img src={something} className="images-sml" alt="m360-do-something-marketing" />
+                    </Slide>
+                        <div className="text-sml">
+                            You want to position yourself in the first places of organic searches "SEO", let's do it. Work with our team of SEO experts who rely on various software to find even the smallest error that you may have on your website in order to fix it. Once we have your website in order, we start with more advanced strategies for indexing, content creation and backlinks.
+                        </div>
+                    <Button className="contact-button">
+                        <a className="smoothscroll" href="#services">
+                            Check our services
+                        </a>
+                    </Button>
+                    <img src={bar1} className="images-sml" alt="m360-bar1" />
+                    
+                </>
+            )}
         </>
-    );
-}
+    )
+};
 
 export default PageI;

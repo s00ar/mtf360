@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fade, Slide } from "react-reveal";
 import { useState } from "react";
-import './contact.css';
+import './css/contact.css';
 import Footer from './Footer';
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/4b1bfb70-0859-11ed-be50-e78da9ee852d";

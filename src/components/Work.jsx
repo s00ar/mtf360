@@ -1,11 +1,7 @@
-import "./work.css";
+import "./css/work.css";
 import React from "react";
 import { Slide, Fade } from "react-reveal";
 import { Grid } from '@mui/material';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import ScrollToTop from "react-scroll-to-top";
 import Footer from './Footer';
 
 const { useState, useEffect } = React;
@@ -36,7 +32,7 @@ function Work() {
 
     return(
         <div id="work">
-            <div className="container">
+            <div className="container" id="home">
             <Grid container 
                 direction="row"
                 justifyContent="center"
@@ -47,7 +43,7 @@ function Work() {
                         <img src={require("../assets/img005.jpg")} className="centered" alt="m360-marketing"/>
                     </Grid>
                 </Slide>
-                <Grid item className="text" xs={5}>
+                <Grid item xs={5}>
                     <Slide right duration={1500} distance="1400px">
                         <div className="padding">
                             <h1 className="text-background">Janneth Spa</h1>
@@ -64,7 +60,7 @@ function Work() {
                     && <a href="#footer"  id="hide"><img src={require("../assets/Vector5.png")} className="arrow" alt="down-arrow" /></a>
                 }
             </div>
-            <Grid container className="space floating" spacing={1}>
+            <Grid container className="floating" spacing={1}>
                 <Grid item xs={5.5}>
                 </Grid>
                 <Fade delay={200}>
@@ -79,7 +75,7 @@ function Work() {
                     direction="row"
                     justifyContent="center"
                     alignItems="center">
-                    <Grid item className="text" xs={7}>
+                    <Grid item xs={7}>
                         <Slide left duration={1500} distance="1400px">
                             <div className="padding">
                                 <div>
@@ -99,7 +95,7 @@ function Work() {
                 </Grid>
             </div>
                 {/* OTHER CONTAINER */}
-            <div className="space container">    
+            <div className="container">    
                 <div className="centered" id="footer">
                     <h2 className="background-image">This why we ensure 100% satisfaction</h2>
                     <br />
@@ -114,7 +110,7 @@ function Work() {
                             <img src={require("../assets/img006.jpg")} className="centered" alt="m360-marketing"/>
                         </Grid>
                     </Slide>
-                    <Grid item className="text" xs={5}>
+                    <Grid item xs={5}>
                         <Slide right duration={1500} distance="1400px">
                             <div className="padding">
                                 <p className="smaller-text">I attribute my company ‘s must recent success and growth to the amazing team of Metamorphosis I have commissioned mutile projects with them. They are professional, deliver extremely fast and are highly talented. All the team members communicate well and are always available. They have provided me with exquisite branding and presentation packages. They inspire confidence and give you tools for success.
@@ -126,14 +122,7 @@ function Work() {
                 </Grid>
             </div>
         {/* FOOTER AND BACK TO TOP BUTTON */}
-            
             <Footer/>
-                        <ScrollToTop
-                        top="1350"
-                        color="#624D8B"
-                        className="backtotop"
-                        style={{background: "black"}}
-                        />
         </div>
     )
 }
