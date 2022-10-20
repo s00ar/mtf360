@@ -5,6 +5,7 @@ import { Grid } from '@mui/material';
 import styled from "styled-components";
 import line1 from "../assets/line1.png";
 import client from "../assets/image8.png";
+import { Link } from "react-router-dom";
 
 function Clients() {
     /* START MEDIA QUERIES */
@@ -41,11 +42,11 @@ window
                         </Slide>
                         <p>High-performance Google Ads campaigns aimed at achieving your brand's objectives. Together with you, we trace KPIs that will allow us to measure the return on your investment. We always keep you informed by email about how your campaign is going. And you always, always have customer service at your disposal, we put at your disposal an executive who will watch over your project, who will also control that the quality of the service you are getting meets your expectations.</p>
                         <p>There are thousands of agencies and developers in the world, why choose us? Simple, (we care about what you care about) and that is what makes us deliver everything on the field in each project, we do not stop until we obtain the total satisfaction of our valued clients.</p>
-                        <Button className="contact-button">
-                            <a className="smoothscroll" href="#work">
+                        <Link className="smoothscroll" to="/work">
+                                <Button className="contact-button">
                                 View our work
-                            </a>
-                        </Button>
+                                </Button>
+                            </Link>
                     </div>
                 </Grid>
                 
@@ -62,11 +63,11 @@ window
                 </Slide>
                 <p>High-performance Google Ads campaigns aimed at achieving your brand's objectives. Together with you, we trace KPIs that will allow us to measure the return on your investment. We always keep you informed by email about how your campaign is going. And you always, always have customer service at your disposal, we put at your disposal an executive who will watch over your project, who will also control that the quality of the service you are getting meets your expectations.</p>
                 <p>There are thousands of agencies and developers in the world, why choose us? Simple, (we care about what you care about) and that is what makes us deliver everything on the field in each project, we do not stop until we obtain the total satisfaction of our valued clients.</p>
-                <Button className="contact-button">
-                    <a className="smoothscroll" href="#work">
-                        View our work
-                    </a>
-            </Button>
+                <Link className="smoothscroll" to="/work">
+                                <Button className="contact-button">
+                                View our work
+                                </Button>
+                            </Link>
                 <img src={client} className="image" alt="client-m360" width={100}/>
         </div>
         )}

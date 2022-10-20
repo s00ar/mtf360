@@ -24,7 +24,7 @@ const StyledMenu = styled.nav`
   height: 100vh;
   text-align: left;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
@@ -42,7 +42,7 @@ const StyledMenu = styled.nav`
       text-align: center;
     }
     &:hover {
-      color: #343078;
+      color: #000;
     }
   }
 `
@@ -101,7 +101,7 @@ const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 20;
+  z-index: 10;
 
   &:focus {
     outline: none;
@@ -110,7 +110,7 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => open ? '#0D0C1D' : '#EFFFFA'};
+    background: ${({ open }) => open ? '#45337D' : '#EFFFFA'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

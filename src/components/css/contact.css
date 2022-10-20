@@ -5,14 +5,25 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.form-container{
+.form-container-s{
     width: 100%;
+    padding-top: 5%;
 }
 .container{
-    padding-top: 8%;
+    padding: 12%;
+}
+.container-s{
+    margin-top: 12%;
+    padding: 5%;
+    text-align: left;
 }
 .white--header{
     margin-bottom: 2%;
+}
+.mobile{
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: left;
 }
 .form-container{
     display: flexbox;
@@ -30,11 +41,8 @@ body {
 }
 .FormText{
     padding-left: 2%;
-    font-size: 1em;
-}
-.FormInput--container{
-    padding-left: 2%;
-    max-width: 35%;
+    font-size: 1.2rem;
+    float:left;
 }
 input[type=text], input[type=email] {
     border: 2px solid #45337D;
@@ -43,15 +51,15 @@ input[type=text], input[type=email] {
     transition: width 2s ease-in-out;
     height: auto;
     padding: 0.7em;
+    padding-left: 2%;
+    margin-left: 2rem;
     background-color: black;
-    text-align: center;font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     width: 35%;
-}/* 
-input[type=text]:focus, input[type=email] {
-    width: 60%;
-} */
+}
 input::placeholder {
     font-weight: bold;
     opacity: .8;
@@ -77,4 +85,24 @@ input::placeholder {
     border-color: #fff;
     transition: all .1s ease-in-out;
     color: #45337D;
+}
+.FormInput{
+    float:left;
+    display: flex;
+    padding: 0;
+    margin: 10px;
+    padding: 0 !important;
+    margin-left: 0;
+    min-width: 54%
+}
+.FormInput::placeholder{
+    opacity: .8;
+    color: #45337D;
+    font-size: 1rem;
+}
+.inputi{
+    min-width: 50%;
+}
+.inputiii{
+    min-width: 85%;
 }

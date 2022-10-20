@@ -45,6 +45,10 @@ article h1 {
 .navbar-item {
     text-decoration: none;
     color: white;
+    font-size: 1.2em;
+}
+.navbar-item:hover {
+    color: rgb(0, 0, 0);
 }
 .burger{
     width: 100vw;

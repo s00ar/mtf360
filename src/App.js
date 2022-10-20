@@ -6,6 +6,8 @@ import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import { Route, Routes } from "react-router-dom";
+import Janneth from "./components/Janneth";
+import Sinergix from "./components/Sinergix";
 
 function App() {
   return (
@@ -26,6 +28,14 @@ function App() {
               </Route>
               <Route path="/contact" element={
                 <Contact />
+              }>
+              </Route>
+              <Route path="/janneth" element={
+                <Janneth />
+              }>
+              </Route>
+              <Route path="/sinergix" element={
+                <Sinergix />
               }>
               </Route>
         </Routes>

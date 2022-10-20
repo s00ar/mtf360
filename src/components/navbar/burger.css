@@ -86,6 +86,7 @@ html, body {
   .nav-button:hover {
       background-color: #45337D;
       transition: ease-in-out;
+      color: #0D0C1D;
   }
   .navbar-item {
       text-decoration: none;

@@ -1,129 +1,178 @@
 import "./css/work.css";
 import React from "react";
-import { Slide, Fade } from "react-reveal";
+import { Slide } from "react-reveal";
 import { Grid } from '@mui/material';
+import styled from "styled-components";
 import Footer from './Footer';
-
-const { useState, useEffect } = React;
+import Img1 from "../assets/janneth.png";
+import Img2 from "../assets/synergix.png";
+import next from "../assets/Vector2.png"
+import prev from "../assets/Vector.png"
+import line2 from "../assets/Line 2.png"
+import line3 from "../assets/Line 3.png"
+import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 function Work() {
-        const [isVisible, setIsVisible] = useState(true);
-
-        const [height, setHeight] = useState(0)
+    /* START MEDIA QUERIES */
+    const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 924px)").matches
+    )
+    
+useEffect(() => {
+    window
+    .matchMedia("(min-width: 924px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+    }, []);
+    /* END MEDIA QUERIES */
+    const Button = styled.button`
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 1em;
+    height: 48px;
+    border: 2px solid #45337D;
+    border-radius: 4rem;
+    color: #ffffff;
+    margin-bottom: 60px;
+    background-color: #000;
+    height: 3em;
+    `;
+    const Buttonsmall = styled.button`
+        display: inline-block;
+        font-size: 1.2em;
+        margin: 1em;
+        height: 48px;
+        border: 2px solid #45337D;
+        border-radius: 4rem;
+        color: #ffffff;
+        margin-bottom: 60px;
+        background-color: #45337D;
+        height: 3em;
+        align-items: center;
+        justify-content: center;
+        padding-left: 8%;
+        padding-right: 8%;
+        `;
         
-        useEffect(() => {   
-            window.addEventListener("scroll", listenToScroll);
-            return () => 
-            window.removeEventListener("scroll", listenToScroll); 
-        }, [])
-        
-        const listenToScroll = () => {
-            let heightToHideFrom = 600;
-            const winScroll = document.body.scrollTop || 
-                document.documentElement.scrollTop;
-            setHeight(winScroll);
-            if (winScroll > heightToHideFrom) {  
-                isVisible && setIsVisible(false);
-            } else {
-                setIsVisible(true);
-            }  
-        };
+        const arrayElements = [
+            {
+                text:"One of the finnest luxury spa and salon services in Riverhead, New york. At Janneth’s Spa we believe everyone deserves to be pampered and to enjoy a little luxury . So they hired us to get such and amazing local business out here and to put them on the spotlight.",
+                img:Img1,
+                link:"/janneth"
+            },
+            {
+                text:"Synergix Marine Engines is a customer service oriented company focused on providing it's products to any business or individual. We set out to introduce the company to the world seeking brand recognition, an increase in sales and to achieve a lasting impact on customers.",
+                img:Img2,
+                link:"/sinergix"
+            },
+];
 
+const [text, setText] = useState(arrayElements[0].text);
+const [img, setImg] = useState(arrayElements[0].img);
+const [first, setFirst] = useState(true);
+const [link, setLink] = useState("/janneth")
+
+const opc1 = () => {
+    setText(arrayElements[0].text)
+    setImg(arrayElements[0].img)
+    setFirst(true)
+    setLink(arrayElements[0].link)
+}
+const opc2 = () => {
+    setText(arrayElements[1].text)
+    setImg(arrayElements[1].img)
+    setFirst(false)
+    setLink(arrayElements[1].link)
+}
 
     return(
-        <div id="work">
-            <div className="container" id="home">
-            <Grid container 
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-                spacing={2} >
-                <Slide left delay={150} duration={1000} distance="1200px">
-                    <Grid item xs={7}>
-                        <img src={require("../assets/img005.jpg")} className="centered" alt="m360-marketing"/>
-                    </Grid>
-                </Slide>
-                <Grid item xs={5}>
-                    <Slide right duration={1500} distance="1400px">
-                        <div className="padding">
-                            <h1 className="text-background">Janneth Spa</h1>
-                            <p>We've done a complete digital campaign, creating a Web site, SEO, Google Adds, Unified listing and a Facebook ad campaign to attract more customers to their business</p>
+        <>
+        {matches ? (
+            /* DESKTOP */
+            <div className="container">
+                {/* NAVEGACIÓN INTERNA*/}
+
+
+            {/* CONTENIDO */}
+                <div className="content-container">
+                    <div className="dinamic-text">
+                        {text}
+                    </div>
+                    <div className="services-nav">
+                    {!first &&
+                        <div className="button-container">
+                            <img src={prev} height= {"50vh"} width= {"25vw"} className="button" alt="m360-marketing" onClick={opc1} />
+                        </div>
+                    }
+                    <Slide right delay={150} duration={1000} distance="1200px">
+                        <div>
+                            <img src={img} width= {"100%"}className="dinamic-img" alt="m360-marketing" />
+                            <Link className="smoothscroll" to={link}>
+                                <Buttonsmall className="contact-button">
+                                See success story
+                                </Buttonsmall>
+                            </Link>
                         </div>
                     </Slide>
-                </Grid>
-            </Grid>
+                    {first && 
+                        <div className="button-container">
+                            <img src={next} height= {"50vh"} width= {"25vw"} className="button" alt="m360-marketing" onClick={opc2} />
+                        </div>
+                    }
                 </div>
-                    {/* NEXT BUTTON */}
-            <div>
-                {
-                    isVisible 
-                    && <a href="#footer"  id="hide"><img src={require("../assets/Vector5.png")} className="arrow" alt="down-arrow" /></a>
-                }
-            </div>
-            <Grid container className="floating" spacing={1}>
-                <Grid item xs={5.5}>
-                </Grid>
-                <Fade delay={200}>
-                    <Grid item className="centered" xs={1}>
-                    </Grid>
-                </Fade>
-                <Grid item xs={5.5}></Grid>
-            </Grid>
-                    {/* OTHER CONTAINER */}
-            <div className="container">    
-                <Grid container 
-                    direction="row"
-                    justifyContent="center"
-                    alignItems="center">
-                    <Grid item xs={7}>
-                        <Slide left duration={1500} distance="1400px">
-                            <div className="padding">
-                                <div>
-                                <h1 className="background-image">Come relax with us</h1>
-                                </div>
-                                <p>This SPA had a huge team of experts, in addition to an impressive workspace in which to provide quality services to its consumers. However, it was unable to attract new consumers, since it did not have an online presence.
-    We created a web site with a strong SEO strategy to optimize organic searches. Meanwhile, we established the profile of their primary, secondary and negative buyer persona, and using all this information, we created campaigns for Google search and display networks, as well as a Facebook ads campaign, boosting conversions and maximizing ROI.
-    We work using collaborative work methodologies offering partial reviews prior the final delivery of the product. </p>
-                            </div>
-                        </Slide>
-                    </Grid>
-                    <Slide right delay={150} duration={1000} distance="1200px">
-                        <Grid item xs={3}>
-                            <img src={require("../assets/img004.jpg")} className="centered" alt="m360-marketing"/>
-                        </Grid>
-                    </Slide>
-                </Grid>
-            </div>
-                {/* OTHER CONTAINER */}
-            <div className="container">    
-                <div className="centered" id="footer">
-                    <h2 className="background-image">This why we ensure 100% satisfaction</h2>
-                    <br />
+                <div className="link-container">
                 </div>
-                <Grid container 
-                    direction="row"
-                    justifyContent="center"
-                    alignItems="center"
-                    spacing={2}>
-                    <Slide left delay={150} duration={1000} distance="1200px">
-                        <Grid item xs={7}>
-                            <img src={require("../assets/img006.jpg")} className="centered" alt="m360-marketing"/>
-                        </Grid>
-                    </Slide>
-                    <Grid item xs={5}>
-                        <Slide right duration={1500} distance="1400px">
-                            <div className="padding">
-                                <p className="smaller-text">I attribute my company ‘s must recent success and growth to the amazing team of Metamorphosis I have commissioned mutile projects with them. They are professional, deliver extremely fast and are highly talented. All the team members communicate well and are always available. They have provided me with exquisite branding and presentation packages. They inspire confidence and give you tools for success.
-
-    Alejandra Wyse </p>
-                            </div>
-                        </Slide>
-                    </Grid>
-                </Grid>
             </div>
-        {/* FOOTER AND BACK TO TOP BUTTON */}
+            {!first && <img src={line3} height= {"10em"} width= {"100%"} className="line-s" alt="m360-line"/>}
+            {first && <img src={line2} height= {"10em"} width= {"100%"} className="line-s" alt="m360-line"/>}
+        {/* FOOTER */}
             <Footer/>
-        </div>
+            </div>
+        ) : (
+        /* MOBILE */
+        <div className="container-s">
+            <h1 className="title-s">
+                Our services
+            </h1>
+                    {!first && <img src={line3} height= {"10em"} width= {"100%"} className="line-s" alt="m360-line"/>}
+                    {first && <img src={line2} height= {"10em"} width= {"100%"} className="line-s" alt="m360-line"/>}
+                {/* NAVEGACIÓN INTERNA*/}
+
+                <div className="services-nav-s">
+                    {!first &&
+                        <div className="button-container">
+                            <img src={prev} height= {"50vh"} width= {"25vw"} className="button-s" alt="m360-marketing" onClick={opc1} />
+                        </div>
+                    }
+                    <div className="dinamic-text-s">
+                        {text}
+                    </div>
+                    {first && 
+                        <div className="button-container">
+                            <img src={next} height= {"50vh"} width= {"25vw"} className="button-s" alt="m360-marketing" onClick={opc2} />
+                        </div>
+                    }
+                    
+                </div>
+
+            {/* CONTENIDO */}
+                <div>
+                    <Slide right delay={150} duration={1000} distance="1200px">
+                        <div>
+                            <img src={img} width= {"100%"}className="dinamic-img-s" alt="m360-marketing" />
+                        </div>
+                    </Slide>
+                </div>
+                <Link className="smoothscroll" to={link}>
+                                <Buttonsmall className="contact-button-s">
+                                See success story
+                                </Buttonsmall>
+                            </Link>
+        {/* FOOTER */}
+            <Footer/>
+            </div>
+        )}
+        </>
     )
 }
 
