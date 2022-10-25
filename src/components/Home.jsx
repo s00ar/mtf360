@@ -4,12 +4,13 @@ import {Fade, LightSpeed, Slide} from "react-reveal";
 import { Grid } from '@mui/material';
 import styled from "styled-components";
 import Comic from "./Comic";
-import PageII from "./PageI";
 import Clients from "./Clients";
 import logo from "../assets/logo.png";
 import { useState, useEffect } from 'react';
 import Footer from './Footer';
 import { Link } from "react-router-dom";
+import something from "../assets/something.png";
+import bar1 from "../assets/line3.png";
 
 function Home() {
   /* START MEDIA QUERIES */
@@ -50,7 +51,7 @@ function Home() {
       display: inline-block;
       font-size: 1em;
       margin: 1em;
-      padding: 0.25em 1em;
+      /* padding: 0.25em 1em; comento esto para solucionar el padding desplazado de la pag de home*/
       border: 2px solid #45337D;
       border-radius: 4rem;
       display: block;
@@ -85,23 +86,40 @@ function Home() {
                             </Button>
                           </Link>
                 </div>
+            </Grid>
+              <Grid item xs={8}>
+                <LightSpeed right delay={250} duration={1000} distance="40px">
+                  <img src={logo} className="logo" alt="logo"/>
+                </LightSpeed>
               </Grid>
-                <Grid item xs={8}>
-                  <LightSpeed right delay={250} duration={1000} distance="40px">
-                    <img src={logo} className="logo" alt="logo"/>
-                  </LightSpeed>
-                </Grid>
-                          {/* NEXT BUTTON */}
-                          <div className="floating">
-                          {
-                              isVisible 
-                              && <a href="#footer"  id="hide"><img src={require("../assets/Vector5.png")} className="arrow" alt="down-arrow" /></a>
-                          }
-                          </div>
-                          {/* END OF NEXT BUTTON */}
-                          
-              </Grid>
-            <PageII/>
+                        {/* NEXT BUTTON */}
+                        <div className="floating">
+                        {
+                            isVisible 
+                            && <a href="#footer"  id="hide"><img src={require("../assets/Vector5.png")} className="arrow" alt="down-arrow" /></a>
+                        }
+                        </div>
+                        {/* END OF NEXT BUTTON */}
+                        
+            </Grid>
+            <Grid container>
+                      <Slide left delay={100} duration={1000} distance="1200px">
+                          <Grid item xs={12} md={6}>
+                              <img src={something} className="images" alt="m360-do-something-marketing" />
+                          </Grid>
+                      </Slide>
+                      <Grid item className="text" xs={10} md={6}>
+                          You want to position yourself in the first places of organic searches "SEO", let's do it. Work with our team of SEO experts who rely on various software to find even the smallest error that you may have on your website in order to fix it. Once we have your website in order, we start with more advanced strategies for indexing, content creation and backlinks.
+                          <Link className="smoothscroll" to="/services">
+                              <Button className="contact-button">
+                                  Check our services
+                              </Button>
+                          </Link>
+                      </Grid>
+                  </Grid>
+                  <div className="bar">
+                          <img src={bar1} className="line3" alt="m360-bar1" />
+                  </div>
             <Comic/>
             <Clients/>
             <div id="footer">
@@ -148,7 +166,19 @@ function Home() {
                 </div>
                 {/* END OF NEXT BUTTON */}
               </div>
-            <PageII/>
+              
+              <Slide left delay={100} duration={1000} distance="1200px">
+                  <img src={something} className="images-sml" alt="m360-do-something-marketing" />
+              </Slide>
+                  <p className="p-text">
+                      You want to position yourself in the first places of organic searches "SEO", let's do it. Work with our team of SEO experts who rely on various software to find even the smallest error that you may have on your website in order to fix it. Once we have your website in order, we start with more advanced strategies for indexing, content creation and backlinks.
+                  </p>
+                      <Link className="smoothscroll" to="/services">
+                          <Button className="contact-button">
+                              Check our services
+                          </Button>
+                      </Link>
+              <img src={bar1} className="images-sml" alt="m360-bar1" />
             <Comic/>
             <Clients/>
             <div className="spacer" id="footer">

@@ -161,3 +161,9 @@
 .spacer{
   margin-bottom: 30vh;
 }
+.text-sml{
+  padding: 2rem;
+}
+/* * {
+  outline: 1px solid violet;
+} */
