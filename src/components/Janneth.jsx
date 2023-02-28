@@ -53,7 +53,7 @@ useEffect(() => {
                             <Slide right duration={1500} distance="1400px">
                                 <div className="story-padding-left">
                                     <h1 className="text-background left-align">Janneth Spa</h1>
-                                    <p className="story-paragraph">We've done a complete digital campaign, creating a Web site, SEO, Google Adds, Unified listing and a Facebook ad campaign to attract more customers to their business</p>
+                                    <p className="story-paragraph">Hemos realizado una campaña digital completa, creando un sitio web, SEO, anuncios de Google Ads y una campaña de anuncios de Facebook para atraer más clientes a su negocio.</p>
                                 </div>
                             </Slide>
                         </div>
@@ -68,10 +68,10 @@ useEffect(() => {
                     <div>
                         <Slide left duration={1500} distance="1400px">
                             <div className="story-padding-right">
-                                <h1 className="background-image">Come relax with us</h1>
-                                <p className="story-paragraph">This SPA had a huge team of experts, in addition to an impressive workspace in which to provide quality services to its consumers. However, it was unable to attract new consumers, since it did not have an online presence.
-                                We created a web site with a strong SEO strategy to optimize organic searches. Meanwhile, we established the profile of their primary, secondary and negative buyer persona, and using all this information, we created campaigns for Google search and display networks, as well as a Facebook ads campaign, boosting conversions and maximizing ROI.<br/><br/>
-                                We work using collaborative work methodologies offering partial reviews prior the final delivery of the product. </p>
+                                <h1 className="background-image">Venga a relajarse con nosotros</h1>
+                                <p className="story-paragraph">Este SPA cuenta con un enorme equipo de expertos, además de un impresionante espacio de trabajo en el que brinda servicios de calidad a sus consumidores. Sin embargo, no pudo atraer nuevos consumidores, ya que no tenía presencia en línea.
+                                Creamos un sitio web con una fuerte estrategia de SEO para optimizar las búsquedas orgánicas. Mientras tanto, establecimos el perfil de su persona de comprador principal, secundaria y negativa, y utilizando toda esta información, creamos campañas para las redes de búsqueda y Display de Google, así como una campaña de anuncios de Facebook, impulsando las conversiones y maximizando el ROI.<br/><br/>
+                                Trabajamos utilizando metodologuías colaborativas y entregas parciales constantes previas a la entrega final para asegurarnos su máxima satisfacción.</p>
                             </div>
                         </Slide>
                     </div>
@@ -83,14 +83,14 @@ useEffect(() => {
                         </Slide>
                     </div>
                 </div>
-                <h2 className="background-image " id="footer">This why we ensure 100% satisfaction</h2>
+                <h2 className="background-image " id="footer">Por esto garantizamos 100% de satisfacción</h2>
                 <div className="story-container story-padding">
                         <Slide left delay={150} duration={1000} distance="1200px">
                                 <img src={require("../assets/img006.jpg")}  alt="m360-marketing"/>
                         </Slide>
                     <div className="">
                         <Slide right duration={1500} distance="1400px">
-                                <p className="story-padding-left">I attribute my company ‘s must recent success and growth to the amazing team of Metamorphosis I have commissioned mutile projects with them. They are professional, deliver extremely fast and are highly talented. All the team members communicate well and are always available. They have provided me with exquisite branding and presentation packages. They inspire confidence and give you tools for success.<br/><br/>Alejandra Wyse </p>
+                                <p className="story-padding-left">"Atribuyo el éxito y el crecimiento más recientes de mi empresa al increíble equipo de Metamorphosis. Les he encargado múltiples proyectos. Son profesionales, entregan extremadamente rápido y tienen mucho talento. Todos los miembros del equipo se comunican bien y están siempre disponibles. Me han proporcionado exquisitos paquetes de marca y presentación. Inspiran confianza y le brindan herramientas para el éxito."<br/><br/>Alejandra Wyse </p>
                         </Slide>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ useEffect(() => {
                         <div className="center-align">
                                 <Slide right duration={1500} distance="1400px">
                                     <h1 className="text-background top-space-s">Janneth Spa</h1>
-                                    <p className="story-paragraph-s">We've done a complete digital campaign, creating a Web site, SEO, Google Adds, Unified listing and a Facebook ad campaign to attract more customers to their business.</p>
+                                    <p className="story-paragraph-s">Hemos realizado una campaña digital completa, creando un sitio web, SEO, anuncios de Google Ads y una campaña de anuncios de Facebook para atraer más clientes a su negocio.</p>
                                 </Slide>
                             <Slide left delay={150} duration={1000} distance="1200px">
                                 <img src={require("../assets/img005.jpg")} alt="m360-marketing" width={"70%"} className="story-image-s"/>
@@ -118,11 +118,11 @@ useEffect(() => {
                     <div className="story-container-s">
                             <Slide left duration={1500} distance="1400px">
                                     <div className="background-image">
-                                        <h4 className=" left-align">Come relax with us</h4>
+                                        <h4 className=" left-align">Venga a relajarse con nosotros</h4>
                                     </div>
-                                    <p className="story-paragraph-s">This SPA had a huge team of experts, in addition to an impressive workspace in which to provide quality services to its consumers. However, it was unable to attract new consumers, since it did not have an online presence.
-                                    We created a web site with a strong SEO strategy to optimize organic searches. Meanwhile, we established the profile of their primary, secondary and negative buyer persona, and using all this information, we created campaigns for Google search and display networks, as well as a Facebook ads campaign, boosting conversions and maximizing ROI.<br/><br/>
-                                    We work using collaborative work methodologies offering partial reviews prior the final delivery of the product. </p>
+                                    <p className="story-paragraph-s">Este SPA cuenta con un enorme equipo de expertos, además de un impresionante espacio de trabajo en el que brinda servicios de calidad a sus consumidores. Sin embargo, no pudo atraer nuevos consumidores, ya que no tenía presencia en línea.
+                                Creamos un sitio web con una fuerte estrategia de SEO para optimizar las búsquedas orgánicas. Mientras tanto, establecimos el perfil de su persona de comprador principal, secundaria y negativa, y utilizando toda esta información, creamos campañas para las redes de búsqueda y Display de Google, así como una campaña de anuncios de Facebook, impulsando las conversiones y maximizando el ROI.<br/><br/>
+                                Trabajamos utilizando metodologuías colaborativas y entregas parciales constantes previas a la entrega final para asegurarnos su máxima satisfacción.</p>
                             </Slide>
                         <div className="center-align">
                             <Slide right delay={150} duration={1000} distance="1200px">
@@ -131,9 +131,9 @@ useEffect(() => {
                         </div>
                     </div>
                     <div className="bottom-space">
-                        <h4 className="inverted-background left-align" id="footer">This why we ensure 100% satisfaction</h4>
+                        <h4 className="inverted-background left-align" id="footer">Por esto garantizamos 100% de satisfacción</h4>
                                 <Slide right duration={1500} distance="1400px">
-                                        <p className="story-paragraph-s">I attribute my company ‘s must recent success and growth to the amazing team of Metamorphosis I have commissioned mutile projects with them. They are professional, deliver extremely fast and are highly talented. All the team members communicate well and are always available. They have provided me with exquisite branding and presentation packages. They inspire confidence and give you tools for success.<br/><br/> Alejandra Wyse</p>
+                                        <p className="story-paragraph-s">"Atribuyo el éxito y el crecimiento más recientes de mi empresa al increíble equipo de Metamorphosis. Les he encargado múltiples proyectos. Son profesionales, entregan extremadamente rápido y tienen mucho talento. Todos los miembros del equipo se comunican bien y están siempre disponibles. Me han proporcionado exquisitos paquetes de marca y presentación. Inspiran confianza y le brindan herramientas para el éxito."<br/><br/> Alejandra Wyse</p>
                                 </Slide>
                             <div className="center-align">
                                 <Slide left delay={150} duration={1000} distance="1200px">

@@ -1,7 +1,5 @@
-/* * {
-  overflow: hidden;
-}  */
 .App {
+  overflow: hidden;
   text-align: center;
   background-color: #000;
   font-size: calc(10px + 2vmin);

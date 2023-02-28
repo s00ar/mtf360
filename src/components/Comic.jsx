@@ -41,12 +41,12 @@ useEffect(() => {
                 <div className="row">
                     <Slide left delay={250} duration={1000} distance="400px">
                         <div className="twocolumn">
-                            <h4 className="comic-text">David Mayorga, founder of Turbomekanics...</h4>
+                            <h4 className="comic-text">Fundador de Turbomekanics...</h4>
                         </div>
                     </Slide>
                     <Fade right delay={450} duration={1000} distance="1600px">
                         <div className="twocolumn">
-                            <h4 className="comic-text">Website design, word study...</h4>
+                            <h4 className="comic-text">Mtf360 propone una estrategia...</h4>
                         </div>
                     </Fade>
                 </div>
@@ -65,12 +65,12 @@ useEffect(() => {
                 <div className="row">
                     <Slide left delay={250} duration={1000} distance="400px">
                         <div className="twocolumn">
-                            <h4 className="comic-text">M360 proposes a strategy...</h4>
+                            <h4 className="comic-text">Diseño de sitio web y estudio de palabras...</h4>
                         </div>
                     </Slide>
                     <Fade right delay={1250} duration={1000} distance="1600px">
                         <div className="twocolumn">
-                            <h4 className="comic-text">Sales have grown by %300...</h4>
+                            <h4 className="comic-text">Las ventas se disparan en un %300.</h4>
                         </div>
                     </Fade>
                 </div>
@@ -86,7 +86,7 @@ useEffect(() => {
                             <img src={ilu2} style={{ width: "100%"}} alt="ilustration2" />
                         </div>
                         
-                            <h4 className="comic-text-s">David Mayorga, founder of Turbomekanics...</h4>
+                            <h4 className="comic-text-s">Fundador de Turbomekanics...</h4>
                     </Slide>
                     <Fade right delay={1250} duration={1000} distance="1600px">                        
                         <div className="row">
@@ -103,7 +103,7 @@ useEffect(() => {
                     </Slide>
                     <Fade right delay={1250} duration={1000} distance="1600px">
                         <div>
-                            <h4 className="comic-text-s">M360 proposes a strategy...</h4>
+                            <h4 className="comic-text-s">Mtf360 propone una estrategia...</h4>
                         </div>
                     </Fade>
                 </div>
@@ -111,7 +111,7 @@ useEffect(() => {
                     <Slide left delay={250} duration={1000} distance="400px">
                         <div>
                             <img src={ilu4} style={{ width: "80%"}} alt="ilustration4" />
-                            <h4 className="comic-text-s">Website design, word study...</h4>
+                            <h4 className="comic-text-s">Diseño de sitio web y estudio de palabras...</h4>
                         </div>
                     </Slide>
                 </div>
@@ -125,7 +125,7 @@ useEffect(() => {
                 <div className="row">
                     <Fade right delay={1250} duration={1000} distance="1600px">
                         <div>
-                            <h4 className="comic-text-s">Sales have grown by %300...</h4>
+                            <h4 className="comic-text-s">Las ventas se disparan en un %300.</h4>
                         </div>
                     </Fade>
                 </div>

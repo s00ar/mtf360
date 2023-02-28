@@ -36,7 +36,7 @@ function Home() {
   }, [])
   
   const listenToScroll = () => {
-      let heightToHideFrom = 1800;
+      let heightToHideFrom = 1200;
       const winScroll = document.body.scrollTop || 
           document.documentElement.scrollTop;
       setHeight(winScroll);
@@ -59,30 +59,29 @@ function Home() {
       color: #624D8B;
       `;
     return (
-      <div className="App">
+      <div className="App" id="home">
             {/* Big Screen */}
             {matches && (
               <>
-                <Grid container id="home" spacing={1}>
+                <Grid container spacing={1}>
                   <Grid item xs={4}>
                     <div className="home-elements">
                       <Fade>
                         <Slide left delay={1250} duration={1000} distance="400px">
-                          <h1 className="text-dargrey">We are,</h1>
+                          <h1 className="text-dargrey">Somos,</h1>
                         </Slide>
                       </Fade>
                       <Slide left delay={500} duration={1200} distance="40px">
-                        <h1 className="text-grey">We Think,</h1>
+                        <h1 className="text-grey">Pensamos,</h1>
                       </Slide>
                       <Slide left delay={750} duration={1500} distance="40px">
-                        <h1 className="text-white">We do!</h1>
+                        <h1 className="text-white">Actuamos!</h1>
                       </Slide>
-                      <p className="p-text">We design and create a unique website for each cliente. A website must express the unique personality that each brand has, together with UX/UI concepts. Brands are becoming more creative when it comes to selling online, don't be left out.
-                    Count on us to develop the website you've always wanted.
+                      <p className="p-text">Diseñamos y creamos sitios web únicos para cada cliente. Un sitio web debe expresar la personalidad única que tiene cada marca, junto con los conceptos UX/UI. Las marcas son cada vez más creativas a la hora de vender online, no te quedes fuera. Cuente con nosotros para desarrollar el sitio web que siempre ha deseado.
                     </p>
                           <Link className="smoothscroll" to="/contact">
                             <Button className="contact-button">
-                              Get in touch
+                              Contáctanos
                             </Button>
                           </Link>
                 </div>
@@ -109,10 +108,10 @@ function Home() {
                           </Grid>
                       </Slide>
                       <Grid item className="text" xs={10} md={6}>
-                          You want to position yourself in the first places of organic searches "SEO", let's do it. Work with our team of SEO experts who rely on various software to find even the smallest error that you may have on your website in order to fix it. Once we have your website in order, we start with more advanced strategies for indexing, content creation and backlinks.
+                      Quieres posicionarte en los primeros lugares de búsquedas orgánicas "SEO", hagámoslo. Trabaje con nuestro equipo de expertos en SEO que confían en varios software para encontrar incluso el error más pequeño que pueda tener en su sitio web para solucionarlo. Una vez que tenemos tu sitio web en orden, comenzamos con estrategias más avanzadas de indexación, creación de contenido y backlinks.
                           <Link className="smoothscroll" to="/services">
                               <Button className="contact-button">
-                                  Check our services
+                                  Nuestros servicios
                               </Button>
                           </Link>
                       </Grid>
@@ -130,7 +129,7 @@ function Home() {
           {/* Small Screen*/}
           {!matches && (
             <>
-              <div className="home-elements">
+              <div className="home-elements-s">
                 <div>
                   <Fade>
                     <Slide left delay={1250} duration={1000} distance="400px">
@@ -148,12 +147,11 @@ function Home() {
                   <h1 className="text-white">We do!</h1>
                   </Slide>
                 </div>
-                <p className="p-text small">We design and create a unique website for each cliente. A website must express the unique personality that each brand has, together with UX/UI concepts. Brands are becoming more creative when it comes to selling online, don't be left out.
-                Count on us to develop the website you've always wanted.
+                <p className="p-text small">Diseñamos y creamos sitios web únicos para cada cliente. Un sitio web debe expresar la personalidad única que tiene cada marca, junto con los conceptos UX/UI. Las marcas son cada vez más creativas a la hora de vender online, no te quedes fuera. Cuente con nosotros para desarrollar el sitio web que siempre ha deseado.
                 </p>
                 <Link className="smoothscroll" to="/contact">
                   <Button className="contact-button">
-                    Get in touch
+                    Contáctanos
                   </Button>
                 </Link>
                 
@@ -170,12 +168,12 @@ function Home() {
               <Slide left delay={100} duration={1000} distance="1200px">
                   <img src={something} className="images-sml" alt="m360-do-something-marketing" />
               </Slide>
-                  <p className="p-text">
-                      You want to position yourself in the first places of organic searches "SEO", let's do it. Work with our team of SEO experts who rely on various software to find even the smallest error that you may have on your website in order to fix it. Once we have your website in order, we start with more advanced strategies for indexing, content creation and backlinks.
+                  <p className="p-text small left-s right-s">
+                  Quieres posicionarte en los primeros lugares de búsquedas orgánicas "SEO", hagámoslo. Trabaje con nuestro equipo de expertos en SEO que confían en varios software para encontrar incluso el error más pequeño que pueda tener en su sitio web para solucionarlo. Una vez que tenemos tu sitio web en orden, comenzamos con estrategias más avanzadas de indexación, creación de contenido y backlinks.
                   </p>
                       <Link className="smoothscroll" to="/services">
                           <Button className="contact-button">
-                              Check our services
+                              Nuestros servicios
                           </Button>
                       </Link>
               <img src={bar1} className="images-sml" alt="m360-bar1" />

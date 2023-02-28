@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import { Route, Routes } from "react-router-dom";
 import Janneth from "./components/Janneth";
 import Sinergix from "./components/Sinergix";
+import Error404 from "./components/Error404";
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
               </Route>
               <Route path="/sinergix" element={
                 <Sinergix />
+              }>
+              </Route>
+              <Route path="*" element={
+                <Error404/>
               }>
               </Route>
         </Routes>

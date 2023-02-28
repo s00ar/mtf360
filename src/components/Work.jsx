@@ -56,12 +56,12 @@ useEffect(() => {
         
         const arrayElements = [
             {
-                text:"One of the finnest luxury spa and salon services in Riverhead, New york. At Janneth’s Spa we believe everyone deserves to be pampered and to enjoy a little luxury . So they hired us to get such and amazing local business out here and to put them on the spotlight.",
+                text:"Uno de los mejores servicios de spa y salón de lujo en Riverhead, Nueva York. En Janneth's Spa creemos que todos merecen ser mimados y disfrutar de un poco de lujo. Así que nos contrataron para traer negocios locales y ponerlos en el centro de atención.",
                 img:Img1,
                 link:"/janneth"
             },
             {
-                text:"Synergix Marine Engines is a customer service oriented company focused on providing it's products to any business or individual. We set out to introduce the company to the world seeking brand recognition, an increase in sales and to achieve a lasting impact on customers.",
+                text:"Synergix Marine Engines es una empresa orientada al servicio al cliente enfocada en proporcionar sus productos a cualquier empresa o individuo. Nos propusimos presentar la empresa al mundo buscando el reconocimiento de la marca, el aumento de las ventas y lograr un impacto duradero en los clientes.",
                 img:Img2,
                 link:"/sinergix"
             },
@@ -86,7 +86,7 @@ const opc2 = () => {
 }
 
     return(
-        <>
+        <div id="home">
         {matches ? (
             /* DESKTOP */
             <div className="container">
@@ -109,7 +109,7 @@ const opc2 = () => {
                             <img src={img} width= {"100%"}className="dinamic-img" alt="m360-marketing" />
                             <Link className="smoothscroll" to={link}>
                                 <Buttonsmall className="contact-button">
-                                See success story
+                                Historia de éxito
                                 </Buttonsmall>
                             </Link>
                         </div>
@@ -165,14 +165,14 @@ const opc2 = () => {
                 </div>
                 <Link className="smoothscroll" to={link}>
                                 <Buttonsmall className="contact-button-s">
-                                See success story
+                                Historia de éxito
                                 </Buttonsmall>
                             </Link>
         {/* FOOTER */}
             <Footer/>
             </div>
         )}
-        </>
+        </div>
     )
 }
 

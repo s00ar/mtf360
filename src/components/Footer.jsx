@@ -13,13 +13,10 @@ function Footer() {
         
     <Grid container className="footer" spacing={1}>
         <Grid item xs={5.5}>
-            <a href='www.twitter.com/'>
-                <TwitterIcon/>
-                </a>
-            <a href='www.linkedin.com/'>
+            <a href='https://www.linkedin.com/in/diegomayorgam360/'>
             <LinkedInIcon/>
             </a>
-            <a href='www.instagram.com/'>
+            <a href='https://www.instagram.com/m360devs/'>
             <InstagramIcon/>
             </a>
         </Grid>

@@ -54,7 +54,7 @@ function Navigation() {
                             className="navbar-item"
                             activeClassName="is-active"
                             to="/services">
-                            Services
+                            Servicios
                         </NavLink>
                     </Button>
                 </Grid>
@@ -64,7 +64,7 @@ function Navigation() {
                             className="navbar-item"
                             activeClassName="is-active"
                             to="/work">
-                            Work
+                            Trabajos
                         </NavLink>
                     </Button>
                 </Grid>
@@ -74,7 +74,7 @@ function Navigation() {
                         className="navbar-item"
                         activeClassName="is-active"
                         to="/contact">
-                            Get in touch
+                            Contacto
                     </NavLink>
                     </Button>
                 </Grid>

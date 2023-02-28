@@ -106,3 +106,12 @@ input::placeholder {
 .inputiii{
     min-width: 85%;
 }
+.FormInput{
+    width: 100vw;
+    font-size: 1.9rem;
+}
+.FormInput::placeholder {
+    font-weight: bold;
+    color: #45337D;
+    font-size: 1.4rem;
+}

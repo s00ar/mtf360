@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import slogo from '../../assets/logo_small.png';
+import "./burger.css";
 
 const Button = styled.button`
 display: inline-block;
@@ -19,7 +20,7 @@ const StyledMenu = styled.nav`
   z-index: 5;
   flex-direction: column;
   justify-content: center;
-  background: rgba(149,148,153,0.8);
+  background: rgba(149,148,153,0.95);
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
@@ -47,7 +48,7 @@ const StyledMenu = styled.nav`
   }
 `
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
   return (
     <div>
       <StyledMenu open={open}>
@@ -56,14 +57,13 @@ const Menu = ({ open }) => {
           activeClassName="is-active"
           to="/"
           exact>
-          <img src={slogo} alt="m360-logo" />
+          <img src={slogo} onClick={() => setOpen(!open)} alt="m360-logo" />
         </NavLink>
-        
         <Button className="nav-button">
             <NavLink
                 className="navbar-item"
                 activeClassName="is-active"
-                to="/services">
+                to="/services" onClick={() => setOpen(!open)}>
                 Services
             </NavLink>
         </Button>
@@ -71,7 +71,7 @@ const Menu = ({ open }) => {
             <NavLink
                 className="navbar-item"
                 activeClassName="is-active"
-                to="/work">
+                to="/work" onClick={() => setOpen(!open)}>
                 Work
             </NavLink>
         </Button>
@@ -79,7 +79,7 @@ const Menu = ({ open }) => {
           <NavLink
               className="navbar-item"
               activeClassName="is-active"
-              to="/contact">
+              to="/contact" onClick={() => setOpen(!open)}>
                   Get in touch
           </NavLink>
         </Button>
@@ -146,13 +146,13 @@ const BurgerMenu = () => {
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();
   return (
-    <div>
+    <div id="home">
       <div ref={node}>
       <NavLink
           activeClassName="is-active"
           to="/"
           exact>
-            <img src={slogo} alt="m360-logo"/>
+            <img className="logom360-s" src={slogo} alt="m360-logo"/>
         </NavLink>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />

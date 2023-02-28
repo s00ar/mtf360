@@ -53,7 +53,7 @@ useEffect(() => {
                             <Slide right duration={1500} distance="1400px">
                                 <div className="story-padding-left">
                                     <h1 className="text-background left-align">Synergix</h1>
-                                    <p className="story-paragraph">We have created a Web site that is optimized for SEO that will help increase their ranking on Google, so is easy to find their products.</p>
+                                    <p className="story-paragraph">Hemos creado un sitio web optimizado para SEO que ayudará a aumentar su resultado en búsquedas orgánicas en Google. Por lo que es fácil encontrar sus productos.</p>
                                 </div>
                             </Slide>
                         </div>
@@ -68,10 +68,10 @@ useEffect(() => {
                     <div>
                         <Slide left duration={1500} distance="1400px">
                             <div className="story-padding-right">
-                                <h3 className="background-image">Synergix's mission is to empower individuals and businesses</h3>
-                                <p className="story-paragraph">Synergix Worldwide Inc. is a customer service oriented company dedicated to providing every business and individual with genuine Hyundai and Doosan marine engine turbochargers and parts, as well as completely new engines. 
+                                <h3 className="background-image">La misión de Synergix es empoderar a individuos y empresas.</h3>
+                                <p className="story-paragraph">Synergix Worldwide Inc. es una empresa orientada al servicio al cliente y dedicada a proporcionar a cada empresa e individuo turbocompresores y repuestos genuinos para motores marinos Hyundai y Doosan, así como también motores completamente nuevos.
                                 <br/>
-                                Synergix's challenge was to enable businesses that needed these types of products to find them and contact them with full confidence. This project started with his Synergix same  need of finding a supplier that covers these requirements. When he contacted his M360, we immediately started working and our corporate culture clicked right away. </p>
+                                El desafío de Synergix era permitir que las empresas que necesitaban este tipo de productos los encontraran y contactaran con ellos con total confianza. Este proyecto partió de su misma necesidad de Synergix de encontrar un proveedor que cubriera estos requerimientos. Cuando se puso en contacto con su M360, inmediatamente comenzamos a trabajar y nuestra cultura corporativa hizo coincidió de inmediato.</p>
                             </div>
                         </Slide>
                     </div>
@@ -83,14 +83,14 @@ useEffect(() => {
                         </Slide>
                     </div>
                 </div>
-                <h2 className="background-image " id="footer">This why we ensure 100% satisfaction</h2>
+                <h2 className="background-image " id="footer">Por esto garantizamos 100% de satisfacción</h2>
                 <div className="story-container story-padding">
                         <Slide left delay={150} duration={1000} distance="1200px">
                                 <img src={require("../assets/img009.jpg")}  alt="m360-marketing"/>
                         </Slide>
                     <div className="">
                         <Slide right duration={1500} distance="1400px">
-                                <p className="story-padding-left">With the goal of always achieving 100% customer satisfaction, we started with workflow. The website has generated many qualified leads across America and has been able to generate contacts and business relationships thanks to its robustness and clarity in presenting the company and its value proposition.</p>
+                                <p className="story-padding-left">Con el objetivo de lograr siempre el 100 % de satisfacción del cliente, comenzamos con el flujo de trabajo. El sitio web ha generado muchos prospectos calificados en todo Estados Unidos y ha podido generar contactos y relaciones comerciales gracias a su solidez y claridad en la presentación de la empresa y su propuesta de valor.</p>
                         </Slide>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ useEffect(() => {
                         <div className="center-align">
                                 <Slide right duration={1500} distance="1400px">
                                     <h1 className="text-background top-space-s">Synergix</h1>
-                                    <p className="story-paragraph-s">We have created a Web site that is optimized for SEO that will help increase their ranking on Google, so is easy to find their products.</p>
+                                    <p className="story-paragraph-s">Hemos creado un sitio web optimizado para SEO que ayudará a aumentar su resultado en búsquedas orgánicas en Google. Por lo que es fácil encontrar sus productos.</p>
                                 </Slide>
                             <Slide left delay={150} duration={1000} distance="1200px">
                                 <img src={require("../assets/img007.jpg")} alt="m360-marketing" width={"70%"} className="story-image-s"/>
@@ -118,11 +118,11 @@ useEffect(() => {
                     <div className="story-container-s">
                             <Slide left duration={1500} distance="1400px">
                                     <div className="background-image">
-                                        <h4 className=" left-align">Synergix's mission is to empower individuals and businesses</h4>
+                                        <h4 className=" left-align">La misión de Synergix es empoderar a individuos y empresas.</h4>
                                     </div>
-                                    <p className="story-paragraph-s">Synergix Worldwide Inc. is a customer service oriented company dedicated to providing every business and individual with genuine Hyundai and Doosan marine engine turbochargers and parts, as well as completely new engines. 
-                                    <br/>
-                                    Synergix's challenge was to enable businesses that needed these types of products to find them and contact them with full confidence. This project started with his Synergix same  need of finding a supplier that covers these requirements. When he contacted his M360, we immediately started working and our corporate culture clicked right away. </p>
+                                    <p className="story-paragraph-s">Synergix Worldwide Inc. es una empresa orientada al servicio al cliente y dedicada a proporcionar a cada empresa e individuo turbocompresores y repuestos genuinos para motores marinos Hyundai y Doosan, así como también motores completamente nuevos.
+                                <br/>
+                                El desafío de Synergix era permitir que las empresas que necesitaban este tipo de productos los encontraran y contactaran con ellos con total confianza. Este proyecto partió de su misma necesidad de Synergix de encontrar un proveedor que cubriera estos requerimientos. Cuando se puso en contacto con su M360, inmediatamente comenzamos a trabajar y nuestra cultura corporativa hizo coincidió de inmediato.</p>
                             </Slide>
                         <div className="center-align">
                             <Slide right delay={150} duration={1000} distance="1200px">
@@ -131,7 +131,7 @@ useEffect(() => {
                         </div>
                     </div>
                     <div className="bottom-space">
-                        <h4 className="inverted-background left-align" id="footer">This why we ensure 100% satisfaction</h4>
+                        <h4 className="inverted-background left-align" id="footer">Por esto garantizamos 100% de satisfacción</h4>
                                 <Slide right duration={1500} distance="1400px">
                                         <p className="story-paragraph-s">With the goal of always achieving 100% customer satisfaction, we started with workflow. The website has generated many qualified leads across America and has been able to generate contacts and business relationships thanks to its robustness and clarity in presenting the company and its value proposition.</p>
                                 </Slide>

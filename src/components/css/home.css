@@ -3,6 +3,11 @@
   padding-left: 4rem;
   text-align: left;
 }
+.home-elements-s {
+  padding-top: 2rem;
+  padding-left: 4rem;
+  text-align: left;
+}
 .logo{
   padding-top: 10%;
   width: 60%;
@@ -21,6 +26,12 @@
 .small {
   font-size: medium;
   margin: 1em 2em 0 0;
+}
+.left-s{
+  margin-left: 3rem;
+}
+.right-s{
+  margin-right: 3rem;
 }
 .contact-button{
   transition: 2s background-color;
@@ -163,6 +174,13 @@
 }
 .text-sml{
   padding: 2rem;
+}
+.images-sml{
+  width: 80%;
+}
+.pgf{
+  margin-top: 20%;
+  
 }
 /* * {
   outline: 1px solid violet;
